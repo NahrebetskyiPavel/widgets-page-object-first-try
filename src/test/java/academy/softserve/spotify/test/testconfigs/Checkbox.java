@@ -10,7 +10,6 @@ public enum Checkbox {
     AGREEMENT("//body/div/main/div/form/div[9]/label[1]/span[1]"),
     CAPTCHA("//div[9]//label[1]//span[2]");
 
-
     private String value;
 
     Checkbox(String value) {

@@ -1,6 +1,4 @@
 package academy.softserve.spotify.test;
-
-import academy.softserve.spotify.test.widgets.Browser;
 import academy.softserve.spotify.test.widgets.MainPage;
 import academy.softserve.spotify.test.widgets.Saver;
 import academy.softserve.spotify.test.widgets.SingUpPage;
@@ -10,9 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
-
 import static academy.softserve.spotify.test.testconfigs.ID.*;
 import static academy.softserve.spotify.test.testconfigs.Month.*;
 import static academy.softserve.spotify.test.testconfigs.Checkbox.*;
@@ -54,7 +49,6 @@ public class SingUp {
     @Parameters({"BaseURL", "singUpClickableWaitTime"})
     @Test(groups = {"returnValue"})
     public void test(String URL, String clicableTime) {
-
         new MainPage(driver).open(URL).
                 singUp(clicableTime);
         new SingUpPage().setDriver(driver)
